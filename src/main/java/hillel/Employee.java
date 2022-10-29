@@ -1,4 +1,10 @@
+package hillel;
+
 public class Employee {
+    public static void main(String[] args) {
+        Employee employee = new Employee("","","",+675437992,21 );
+        System.out.println(employee);
+    }
     private String name;
     private String jobTitle;
     private String email;
@@ -13,9 +19,7 @@ public class Employee {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
     public void setName(String name) {
         this.name = name;

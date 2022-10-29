@@ -1,2 +1,8 @@
-package hillel;public class SameName {
+package hillel;
+
+public class SameName {
+    public static void main(String[] args) {
+        SameName sameName = new SameName();
+        System.out.println("Same Name");
+    }
 }

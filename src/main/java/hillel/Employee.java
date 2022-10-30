@@ -1,22 +1,21 @@
 package hillel;
 
 public class Employee {
-    public static void main(String[] args) {
-        Employee employee = new Employee("","","",+675437992,21 );
-        System.out.println(employee);
-    }
     private String name;
     private String jobTitle;
     private String email;
-    private int telNumber;
+    private Integer telNumber;
     private int age;
 
-    public Employee(String name, String jobTitle, String email, int telNumber, int age) {
+    public Employee(String name, String jobTitle, String email, Integer telNumber, int age) {
         this.name = name;
         this.jobTitle = jobTitle;
         this.email = email;
         this.telNumber = telNumber;
         this.age = age;
+    }
+    public void questionnaire(){
+        System.out.println("Employee: " + name + jobTitle + email + telNumber + ", " + age);
     }
 
     public String getName() {return name;}

@@ -1,10 +1,6 @@
 package hillel;
 
 public class Car {
-    public static void main(String[] args) {
-        Car car = new Car();
-        car.start();
-    }
     public void start(){
         setStartElectricity("Turn on Electricity");
         System.out.println((getStartElectricity()));
@@ -19,33 +15,33 @@ public class Car {
 
     private String startFuelSystem;
 
-    public void Car(String startElectricity, String startCommand, String startFuelSystem) {
+    public Car(String startElectricity, String startCommand, String startFuelSystem) {
         this.startElectricity = startElectricity;
         this.startCommand = startCommand;
         this.startFuelSystem = startFuelSystem;
     }
 
-    public String getStartElectricity() {
+    private String getStartElectricity() {
         return startElectricity;
     }
 
-    public void setStartElectricity(String startElectricity) {
+    private void setStartElectricity(String startElectricity) {
         this.startElectricity = startElectricity;
     }
 
-    public String getStartCommand() {
+    private String getStartCommand() {
         return startCommand;
     }
 
-    public void setStartCommand(String startCommand) {
+    private void setStartCommand(String startCommand) {
         this.startCommand = startCommand;
     }
 
-    public String getStartFuelSystem() {
+    private String getStartFuelSystem() {
         return startFuelSystem;
     }
 
-    public void setStartFuelSystem(String startFuelSystem) {
+    private void setStartFuelSystem(String startFuelSystem) {
         this.startFuelSystem = startFuelSystem;
     }
 }

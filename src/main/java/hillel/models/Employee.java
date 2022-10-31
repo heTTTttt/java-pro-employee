@@ -1,23 +1,22 @@
-package hillel;
+package hillel.models;
 
 public class Employee {
     private String name;
     private String jobTitle;
     private String email;
-    private Integer telNumber;
+    private String telNumber;
     private int age;
 
-    public Employee(String name, String jobTitle, String email, Integer telNumber, int age) {
+    public Employee(String name, String jobTitle, String email, String telNumber, int age) {
         this.name = name;
         this.jobTitle = jobTitle;
         this.email = email;
         this.telNumber = telNumber;
         this.age = age;
     }
-    public void questionnaire(){
-        System.out.println("Employee: " + name + jobTitle + email + telNumber + ", " + age);
-    }
-
+public String toString(){
+        return name + jobTitle + email + telNumber + ", " + age;
+}
     public String getName() {return name;}
 
     public void setName(String name) {
@@ -40,11 +39,11 @@ public class Employee {
         this.email = email;
     }
 
-    public int getTelNumber() {
+    public String getTelNumber() {
         return telNumber;
     }
 
-    public void setTelNumber(int telNumber) {
+    public void setTelNumber(String telNumber) {
         this.telNumber = telNumber;
     }
 
